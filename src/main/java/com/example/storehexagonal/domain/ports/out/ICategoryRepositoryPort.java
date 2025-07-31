@@ -4,7 +4,7 @@ import com.example.storehexagonal.domain.model.Category;
 
 import java.util.List;
 
-public interface CategoryRepositoryPort {
+public interface ICategoryRepositoryPort {
     Category save(Category category);
     List<Category> findAll();
 }

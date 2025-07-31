@@ -1,17 +1,17 @@
 package com.example.storehexagonal.application.services;
 
 import com.example.storehexagonal.domain.model.Category;
-import com.example.storehexagonal.domain.ports.in.CategoryUseCase;
-import com.example.storehexagonal.domain.ports.out.CategoryRepositoryPort;
+import com.example.storehexagonal.domain.ports.in.ICategoryUseCase;
+import com.example.storehexagonal.domain.ports.out.ICategoryRepositoryPort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class CategoryService implements CategoryUseCase {
-    private final CategoryRepositoryPort categoryRepositoryPort;
+public class CategoryService implements ICategoryUseCase {
+    private final ICategoryRepositoryPort categoryRepositoryPort;
 
-    public CategoryService(CategoryRepositoryPort categoryRepositoryPort) {
+    public CategoryService(ICategoryRepositoryPort categoryRepositoryPort) {
         this.categoryRepositoryPort = categoryRepositoryPort;
     }
 

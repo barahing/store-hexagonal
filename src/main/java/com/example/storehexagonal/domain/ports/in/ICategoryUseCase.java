@@ -4,7 +4,7 @@ import com.example.storehexagonal.domain.model.Category;
 
 import java.util.List;
 
-public interface CategoryUseCase {
+public interface ICategoryUseCase {
     Category createCategory(Category category);
     List<Category> getAllCategories();
 }
